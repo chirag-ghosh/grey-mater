@@ -1,18 +1,18 @@
 import Head from "next/head";
 import React from "react";
+import Header from "./header";
 
 const Layout = ({children}: {children: any}) => {
 
     return(
-        <div>
+        <div className="container">
             <Head>
                 <title>Grey Mater</title>
                 <meta name="description" content="A minimal portfolio website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='home'>
-                {children}
-            </div>
+            <Header />
+            {children}
         </div>
     )
 }
