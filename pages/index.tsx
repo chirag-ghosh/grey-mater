@@ -1,10 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { biodata } from '../basicData'
 
 const Home: NextPage = () => {
   return (
-    <div>
-      
+    <div className='home'>
+      <div className='title'>{biodata.name}</div>
+      <div className='tagline'>{biodata.tagline}</div>
     </div>
   )
 }

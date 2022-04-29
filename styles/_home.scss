@@ -1,0 +1,19 @@
+.home {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-size: 5rem;
+        font-weight: 600;
+        color: $light-black;
+    }
+
+    .tagline {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        color: $dark-grey;
+    }
+}
