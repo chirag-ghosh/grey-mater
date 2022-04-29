@@ -1,12 +1,13 @@
 import { NextComponentType } from "next"
 import Link from "next/link"
+import { biodata } from "../basicData"
 
 const Header: NextComponentType = () => {
 
     return(
         <div className="header">
             <div className="title">
-                Grey Mater
+                {biodata.name}
             </div>
             <div className="option-list">
                 <Link href="/">
