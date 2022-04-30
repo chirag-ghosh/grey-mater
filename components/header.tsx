@@ -13,7 +13,7 @@ const Header: NextComponentType = () => {
                 <Link href="/">
                     <div className="option">Home</div>
                 </Link>
-                <Link href="/">
+                <Link href="/blogs">
                     <div className="option">Blogs</div>
                 </Link>
                 <Link href="/">
