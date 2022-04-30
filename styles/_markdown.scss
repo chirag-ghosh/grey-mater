@@ -1,6 +1,6 @@
 .markdown {
     margin: 0 auto;
-    max-width: 95%;
+    max-width: 90%;
     width: 60rem;
     color: $light-black;
 
@@ -31,11 +31,13 @@
         }
 
         code {
-            padding: 0.2rem 0.4rem;
+            padding: 0.1rem 0.4rem;
             margin: 0 0.3rem;
             background-color: rgba($light-grey, 0.5);
             color: $black;
             border-radius: 5px;
+            font-family: $monospace-font;
+            font-size: 1rem;
         }
 
         blockquote {
