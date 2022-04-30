@@ -1,0 +1,35 @@
+.home {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        font-size: 5rem;
+        font-weight: 600;
+        color: $light-black;
+    }
+
+    .tagline {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        color: $dark-grey;
+    }
+
+    .link-list {
+        width: 15rem;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        a {
+            color: $dark-grey;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
