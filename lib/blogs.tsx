@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 
 const postsDirectory = path.join(process.cwd(), "blogs");
 
@@ -15,12 +16,12 @@ export function getSortedPostsData() {
     const fileContents = fs.readFileSync(fullPath, "utf8");
 
     // Use gray-matter to parse the post metadata section
-    // const matterResult = matter(fileContents);
+    const matterResult = matter(fileContents);
 
     // Combine the data with the id
     return {
       id,
-      //   ...matterResult.data,
+      ...matterResult.data,
     };
   });
   // Sort posts by date

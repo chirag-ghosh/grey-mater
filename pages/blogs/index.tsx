@@ -16,11 +16,15 @@ export async function getStaticProps() {
 const Blogs: NextPage = ({ allPostsData }: any) => {
   return (
     <section>
-      <h2>Blogs</h2>
+      <h2>Blog</h2>
+      <p>The blog is the basic flat normal structure.</p>
       <ul>
-        {allPostsData.map(({ id }: any) => (
+        {allPostsData.map(({ id, date, title }: any) => (
           <li>
-            <a>{id}</a>
+            <p>{title}</p>
+            <p>{date}</p>
+            <p>{id}</p>
+            <br />
           </li>
         ))}
       </ul>
