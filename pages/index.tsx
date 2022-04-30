@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { biodata, links } from '../basicData'
+import EmailPopup from '../components/emailPopup'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
           )
         })}
       </div>
+      <EmailPopup />
     </div>
   )
 }

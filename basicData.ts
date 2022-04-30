@@ -3,7 +3,8 @@ import { Biodata, Link } from "./types";
 
 export const biodata: Biodata = {
     name: "Grey Mater",
-    tagline: "A minimal portfolio website."
+    tagline: "A minimal portfolio website.",
+    email: "cghosh828049@gmail.com"
 }
 
 export const links: Link[] = [
