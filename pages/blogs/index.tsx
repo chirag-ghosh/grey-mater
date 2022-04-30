@@ -20,7 +20,7 @@ const Blogs: NextPage = ({ allPostsData }: any) => {
       <p>The blog is the basic flat normal structure.</p>
       <ul>
         {allPostsData.map(({ id, date, title }: any) => (
-          <li>
+          <li key={id}>
             <p>{title}</p>
             <p>{date}</p>
             <p>{id}</p>
