@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { getSortedPostsData } from "../../lib/blogs";
-import { biodata, links } from "../../basicData";
-import EmailPopup from "../..//components/emailPopup";
+
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
