@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { getSortedPostsData } from "../../lib/blogs";
 
-
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
 
@@ -20,9 +19,8 @@ const Blogs: NextPage = ({ allPostsData }: any) => {
       <ul>
         {allPostsData.map(({ id, date, title }: any) => (
           <li key={id}>
-            <p>{title}</p>
+            <a href={"/blog/" + id}>{title}</a>
             <p>{date}</p>
-            <p>{id}</p>
             <br />
           </li>
         ))}
