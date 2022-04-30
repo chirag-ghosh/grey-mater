@@ -21,16 +21,18 @@ export async function getStaticProps({ params }: any) {
 
 export default function Post({ postData }: any) {
   return (
-    <div>
+    <>
       {/* Add this <Head> tag */}
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1>{postData.title}</h1>
-        <p>{postData.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <article className='markdown'>
+        <div className='markdown-header'>
+          <h1>{postData.title}</h1>
+          <p>{postData.date}</p>
+        </div>
+        <div className='markdown-body' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </div>
+    </>
   );
 }

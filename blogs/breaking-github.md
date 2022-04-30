@@ -22,7 +22,7 @@ large(approx 7–9 GBs).
 With the help of this script I was able to find three bugs on GitHub after which
 they blocked my repository[[2]](https://github.com/DefCon-007/Commiter) .
 
-1.  **Z-index for commit label of contribution graph was not proper** :
+**1. Z-index for commit label of contribution graph was not proper** :
 
 Below is the screenshot of the issue I am talking about.
 
