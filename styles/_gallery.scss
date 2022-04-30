@@ -1,0 +1,26 @@
+.gallery {
+    width: 95%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .photo-grid {
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+
+        img {
+            display: inline-block;
+            width: 30rem;
+            max-width: 90%;
+            margin: 0 1rem;
+        }
+    }
+}
