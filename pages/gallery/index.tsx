@@ -11,7 +11,6 @@ export async function getStaticProps() {
 }
  
 const Gallery: NextPage = ({photoList}: any) => {
-    console.log(photoList.length)
     return(
         <div className='gallery'>
             <h1>The beauties of the world</h1>
