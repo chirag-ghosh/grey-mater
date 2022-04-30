@@ -1,9 +1,9 @@
-import { GitHub, Instagram, Youtube } from "react-feather";
+import { GitHub, Instagram, Twitter } from "react-feather";
 import { Biodata, Link } from "./types";
 
 export const biodata: Biodata = {
-    name: "Grey Mater",
-    tagline: "A minimal portfolio website.",
+    name: "Chirag Ghosh",
+    tagline: "Coder | Photographer",
     email: "cghosh828049@gmail.com"
 }
 
@@ -13,11 +13,11 @@ export const links: Link[] = [
         link: 'https://github.com/chirag-ghosh'
     },
     {
-        icon: Youtube,
-        link: 'https://github.com/chirag-ghosh'
+        icon: Twitter,
+        link: 'https://twitter.com/cghosh828049'
     },
     {
         icon: Instagram,
-        link: 'https://github.com/chirag-ghosh'
+        link: 'https://www.instagram.com/gallery.chiragghosh.me/'
     }
 ]
