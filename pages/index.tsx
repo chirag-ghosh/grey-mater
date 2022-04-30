@@ -8,9 +8,9 @@ const Home: NextPage = () => {
       <div className='title'>{biodata.name}</div>
       <div className='tagline'>{biodata.tagline}</div>
       <div className='link-list'>
-        {links.map((link) => {
+        {links.map((link, index) => {
           return(
-            <a href={link.link}>
+            <a key={index} href={link.link}>
               <link.icon size={30} />
             </a>
           )
