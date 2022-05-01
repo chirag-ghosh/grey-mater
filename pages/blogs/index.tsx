@@ -19,7 +19,7 @@ const Blogs: NextPage = ({ allPostsData }: any) => {
         {allPostsData.map(({ id, date, title }: any) => (
           <li key={id}>
             <a href={"/blog/" + id}>{title}</a>
-            <p>{date}</p>
+            <p>{(new Date(date)).toLocaleString()}</p>
           </li>
         ))}
       </ul>

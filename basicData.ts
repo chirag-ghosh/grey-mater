@@ -3,7 +3,7 @@ import { Biodata, Link } from "./types";
 
 export const biodata: Biodata = {
     name: "Chirag Ghosh",
-    tagline: "Coder | Photographer",
+    tagline: "Student | Photographer | Coder",
     email: "cghosh828049@gmail.com"
 }
 
