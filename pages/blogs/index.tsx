@@ -14,7 +14,7 @@ export async function getStaticProps() {
 const Blogs: NextPage = ({ allPostsData }: any) => {
   return (
     <section className='blog-list'>
-      <h2>A list of sample write-ups.</h2>
+      <h2>A list of my write-ups.</h2>
       <ul>
         {allPostsData.map(({ id, date, title }: any) => (
           <li key={id}>
