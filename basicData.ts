@@ -14,10 +14,10 @@ export const links: Link[] = [
     },
     {
         icon: Twitter,
-        link: 'https://twitter.com/cghosh828049'
+        link: 'https://twitter.com/SukoonFinder'
     },
     {
         icon: Instagram,
-        link: 'https://www.instagram.com/gallery.chiragghosh.me/'
+        link: 'https://www.instagram.com/unfocusedclicks'
     }
 ]
