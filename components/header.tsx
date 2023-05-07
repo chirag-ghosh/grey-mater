@@ -1,8 +1,7 @@
-import { NextComponentType } from "next"
 import Link from "next/link"
 import { links } from "../basicData"
 
-const Header: NextComponentType = () => {
+const Header = () => {
 
     return(
         <div className="header">

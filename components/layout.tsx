@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { biodata } from "../basicData";
 import Header from "./header";
+import Navbar from "./Navbar";
 
 const Layout = ({children}: {children: any}) => {
 
@@ -14,6 +15,7 @@ const Layout = ({children}: {children: any}) => {
             </Head>
             <Header />
             {children}
+            <Navbar />
         </div>
     )
 }
