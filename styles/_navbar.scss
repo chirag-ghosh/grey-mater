@@ -9,6 +9,7 @@
     background-color: rgba($text-secondary, 0.1);
 
     border-radius: 8px;
+    backdrop-filter: blur(4px);
 
     display: flex;
     align-items: center;
