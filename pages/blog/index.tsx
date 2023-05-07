@@ -14,12 +14,16 @@ export async function getStaticProps() {
 const Blogs: NextPage = ({ allPostsData }: any) => {
   return (
     <section className='blog-list'>
-      <h2>A list of my write-ups.</h2>
       <ul>
-        {allPostsData.map(({ id, date, title }: any) => (
+        {allPostsData.map(({ id, date, title, categories }: any) => (
           <li key={id}>
-            <a href={"/blog/" + id}>{title}</a>
-            <p>{(new Date(date)).toLocaleString()}</p>
+            <div className="top-bar">
+              <a href={"/blog/" + id}>{title}</a>
+              <p>{(new Date(date)).toLocaleDateString()}</p>
+            </div>
+            <div className="categories">
+              {categories.map((category: string) => <span>{category}</span>)}
+            </div>
           </li>
         ))}
       </ul>

@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Hash size={22} />
                 <div className="label">About</div>
             </Link>
-            <Link href='/blogs' className={router.pathname === "/blogs" ? "active" : ""}>
+            <Link href='/blog' className={router.pathname === "/blog" ? "active" : ""}>
                 <PenTool size={22} />
                 <div className="label">Blog</div>
             </Link>

@@ -1,44 +1,57 @@
 .blog-list {
-    margin: 4rem auto;
-    width: 60rem;
-    max-width: 95%;
-    color: $light-black;
-
-    h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
+    max-width: 90%;
+    width: 1200px;
+    margin: 2rem auto;
 
     ul {
-        margin: 3rem 0;
+        margin: 2rem 0;
     }
 
     li {
         margin: 2rem 0;
-        padding: 1rem 1.5rem;
         border-radius: 5px;
         list-style: none;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include sm {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
 
         a {
-            color: rgba($light-black, 0.9);
+            color: $text;
             text-decoration: none;
-            font-size: 1.8rem;
-            font-weight: 600;
+            font-size: 1.7rem;
+            font-weight: 500;
         }
 
         p {
-            color: $dark-grey;
+            font-size: 0.9rem;
+            color: rgba($text-secondary, 0.8);
+            margin: 0 3rem 0 1rem;
+
+            @include sm {
+                margin: 0.8rem 0;
+            }
         }
 
-        &:hover {
-            background-color: rgba($light-grey, 0.4);
-            cursor: pointer;
+        .categories {
+            margin-top: 1rem;
 
-            a {
-                color: $light-black;
+            span {
+                font-size: 0.9rem;
+                color: rgba($text-secondary, 0.8);
+                background-color: rgba($text-secondary, 0.1);
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                margin-right: 1rem;
             }
         }
     }
