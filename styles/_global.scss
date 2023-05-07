@@ -13,6 +13,8 @@ body {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     animation-direction: alternate;
+
+    @include custom-scrollbar;
 }
 
 .button {

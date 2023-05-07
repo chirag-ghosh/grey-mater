@@ -28,17 +28,17 @@
   
   @mixin custom-scrollbar {
     &::-webkit-scrollbar-track {
-      background-color: rgba($text-secondary, 0.05);
+      background-color: rgba($black, 0.5);
       border-radius: 100px;
     }
   
     &::-webkit-scrollbar {
       width: 8px;
-      background-color: rgba($text-secondary, 0.05);
+      background-color: rgba($black, 0.5);
     }
   
     &::-webkit-scrollbar-thumb {
-      background-color: $black;
+      background-color: rgba($text-secondary, 0.75);
       border-radius: 100px;
     }
   
