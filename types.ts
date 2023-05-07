@@ -8,5 +8,6 @@ export type Biodata = {
 
 export type Link = {
     icon: Icon,
-    link: string
+    link: string,
+    name: string
 }

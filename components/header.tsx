@@ -1,27 +1,26 @@
 import { NextComponentType } from "next"
 import Link from "next/link"
-import { biodata } from "../basicData"
+import { links } from "../basicData"
 
 const Header: NextComponentType = () => {
 
     return(
         <div className="header">
-            <div className="title">
-                {biodata.name}
-            </div>
-            <div className="option-list">
-                <Link href="/">
-                    <div className="option">Home</div>
-                </Link>
-                <Link href="/blogs">
-                    <div className="option">Blogs</div>
-                </Link>
-                <Link href="https://gallery.chiragghosh.me">
-                    <div className="option">Gallery</div>
-                </Link>
-                <Link href="/Resume.pdf">
-                    <div className="option">Resume</div>
-                </Link>
+            <Link href="/">
+                <img src="/logo.jpeg" alt="logo" />
+            </Link>
+            <div className='link-list'>
+                {links.map((link, index) => {
+                return(
+                    <>
+                        <a key={index} href={link.link}>
+                            <p>{link.name}</p>
+                            <link.icon size={22} />
+                        </a>
+                        {index != (links.length-1) && <div>/</div>}
+                    </>
+                )
+                })}
             </div>
         </div>
     )

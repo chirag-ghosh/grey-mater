@@ -1,32 +1,37 @@
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 4.5rem;
-    border-bottom: 1px solid rgba($light-grey, 0.4);
-    font-size: 1.2rem;
-    background-color: rgba($white, 0.2);
+    max-width: 90%;
+    width: 1200px;
+    margin: 3.5rem auto;
 
-    .title {
-        font-size: 1.4rem;
-        font-weight: 500;
-        cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 0;
     }
 
-    .option-list {
-        width: 30%;
+    img {
+        width: 4rem;
+        border-radius: 100%;
+    }
+
+    .link-list {
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        
-        .option {
-            cursor: pointer;
-            color: $dark-grey;
+        color: $text-secondary;
 
-            &:hover {
-                color: $black;
-            }
+        a {
+            text-decoration: none;
+            color: $text-secondary;
+        }
+
+        svg {
+            display: none;
         }
     }
 }
