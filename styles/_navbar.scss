@@ -36,4 +36,12 @@
             font-size: 0.8rem;
         }
     }
+
+    @include sm {
+        a {
+            .label {
+                display: none;
+            }
+        }
+    }
 }

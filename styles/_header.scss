@@ -16,10 +16,14 @@
     img {
         width: 4rem;
         border-radius: 100%;
+
+        @include sm {
+            width: 3rem;
+        }
     }
 
     .link-list {
-        width: 40%;
+        width: 45%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -32,6 +36,16 @@
 
         svg {
             display: none;
+        }
+
+        @include sm {
+            p {
+                display: none;
+            }
+
+            svg {
+                display: block;
+            }
         }
     }
 }
