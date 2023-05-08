@@ -2,7 +2,11 @@ import type { NextPage } from "next";
 import { getSortedPostsData } from "../../lib/blogs";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  let allPostsData = getSortedPostsData();
+
+  allPostsData = allPostsData.filter(({draft}: any) => {
+    return !draft || process.env.NODE_ENV === 'development'
+  })
 
   return {
     props: {

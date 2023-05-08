@@ -6,7 +6,6 @@ const Navbar = () => {
 
     const router = useRouter()
     const openTab = router.pathname.split("/")[1]
-    console.log("open", openTab)
 
     return(
         <div className="navbar">

@@ -1,7 +1,7 @@
 ---
 title: "The One where I test everything"
 date: "2021-11-04T01:18:47+05:30"
-draft: false
+draft: true
 categories: ["life", "non-tech", "self"]
 ---
 
