@@ -5,22 +5,24 @@ import { useRouter } from "next/router";
 const Navbar = () => {
 
     const router = useRouter()
+    const openTab = router.pathname.split("/")[1]
+    console.log("open", openTab)
 
     return(
         <div className="navbar">
-            <Link href='/' className={router.pathname === "/" ? "active" : ""}>
+            <Link href='/' className={openTab === "" ? "active" : ""}>
                 <Home size={22} />
                 <div className="label">Home</div>
             </Link>
-            <Link href='/about' className={router.pathname === "/about" ? "active" : ""}>
+            <Link href='/about' className={openTab === "about" ? "active" : ""}>
                 <Hash size={22} />
                 <div className="label">About</div>
             </Link>
-            <Link href='/blog' className={router.pathname === "/blog" ? "active" : ""}>
+            <Link href='/blog' className={openTab === "blog" ? "active" : ""}>
                 <PenTool size={22} />
                 <div className="label">Blog</div>
             </Link>
-            <Link href='/gallery' className={router.pathname === "/gallery" ? "active" : ""}>
+            <Link href='/gallery' className={openTab === "gallery" ? "active" : ""}>
                 <Image size={22} />
                 <div className="label">Gallery</div>
             </Link>
