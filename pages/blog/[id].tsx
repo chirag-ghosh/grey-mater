@@ -29,7 +29,7 @@ export default function Post({ postData }: any) {
       <article className='markdown'>
         <div className='markdown-header'>
           <h1>{postData.title}</h1>
-          <p>{(new Date(postData.date)).toLocaleString()}</p>
+          <p>{(new Date(postData.date)).toLocaleDateString()}</p>
         </div>
         <div className='markdown-body' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
