@@ -1,6 +1,7 @@
 import Head from "next/head";
-
+import Prism from "prismjs";
 import { getAllPostIds, getPostData } from "../../lib/blogs";
+import { useEffect } from "react";
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -20,6 +21,11 @@ export async function getStaticProps({ params }: any) {
 }
 
 export default function Post({ postData }: any) {
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [postData])
+
   return (
     <>
       {/* Add this <Head> tag */}

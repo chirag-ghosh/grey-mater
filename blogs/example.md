@@ -175,7 +175,7 @@ out-of-the-box.
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>dhshcbdhcbscjhbdjbcsbedhbsjhdbjshbjhcedbhc
+    <title>Example HTML5 Document</title>
   </head>
   <body>
     <p>Test</p>
