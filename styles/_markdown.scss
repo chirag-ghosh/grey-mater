@@ -87,6 +87,7 @@
             padding: 0.1rem 1.2rem;
             color: $text-secondary;
             font-weight: 400;
+            margin-bottom: 1.5rem;
 
             p {
                 margin: 0.3rem 0;
@@ -144,6 +145,11 @@
                 }
               }
             }
+        }
+
+        mark {
+            padding: 0rem 0.5rem;
+            border-radius: 5px;
         }
     }
 }

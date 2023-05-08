@@ -72,7 +72,7 @@ export async function getPostData(id: any) {
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
-    .use(html)
+    .use(html, {sanitize: false})
     .use(remarkGfm)
     .use(emoji, {accessible: true})
 
