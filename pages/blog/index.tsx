@@ -26,7 +26,7 @@ const Blogs: NextPage = ({ allPostsData }: any) => {
               <p>{(new Date(date)).toLocaleDateString()}</p>
             </div>
             <div className="categories">
-              {categories.map((category: string) => <span>{category}</span>)}
+              {categories.map((category: string) => <span key={category}>{category}</span>)}
             </div>
           </li>
         ))}

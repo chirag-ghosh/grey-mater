@@ -19,7 +19,7 @@ const Gallery = ({photoInfos}: {photoInfos: PhotoInfo[]}) => {
             <div className='photo-grid'>
                 {photoInfos.map((photoInfo, index: number) => {
                     return(
-                        <div className='item'>
+                        <div className='item' key={index}>
                             <Image
                                 key={index}
                                 src={photoInfo.filePath}
