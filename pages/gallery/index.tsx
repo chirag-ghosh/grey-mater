@@ -19,8 +19,19 @@ const Gallery = ({photoInfos}: {photoInfos: PhotoInfo[]}) => {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        if(document.readyState === 'complete') setIsLoading(false)
-        else setIsLoading(true)
+        const handleLoad = () => {
+            setIsLoading(false)
+        }
+
+        if (document.readyState === 'complete') {
+            handleLoad();
+        } else {
+            window.addEventListener('load', handleLoad);
+        }
+        
+        return () => {
+            window.removeEventListener('load', handleLoad);
+        }
     }, [])
 
     return(
