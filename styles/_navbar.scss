@@ -15,6 +15,20 @@
     align-items: center;
     justify-content: space-between;
 
+    transition: background-color 0.5s ease;
+
+    &.special {
+        background-color: rgba($text-secondary, 0.8);
+
+        a {
+            color: $black;
+
+            &.active {
+                background-color: rgba($text, 1);
+            }
+        }
+    }
+
     a {
         flex-grow: 1;
         display: flex;
@@ -22,13 +36,16 @@
         align-items: center;
 
         padding: 1rem 1.2rem;
+        border-radius: 8px;
 
         text-decoration: none;
         color: $text-secondary;
 
+        transition: color 0.5s ease;
+
         &.active {
             background-color: rgba($text-secondary, 0.15);
-            border-radius: 8px;
+            transition: background-color 0.5s ease 0.1s;
         }
         
         .label {

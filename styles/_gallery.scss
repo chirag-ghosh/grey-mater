@@ -1,26 +1,41 @@
 .gallery {
     width: 95%;
-    margin: 4rem auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h1 {
         text-align: center;
-        font-weight: 600;
-        font-size: 3rem;
+        font-weight: 500;
+        font-size: 2.5rem;
     }
 
     .photo-grid {
         width: 100%;
-        text-align: center;
         margin-top: 5rem;
+        column-gap: 0rem;
+        column-count: 3;
+
+        @include md {
+            column-count: 2;
+        }
+
+        @include sm {
+            column-count: 1;
+        }
+
+        .item {
+            padding: 0.5rem 0.8rem;
+            margin: 0rem;
+            display: inline-block;
+        }
 
         img {
-            display: inline-block;
-            width: 30rem;
-            max-width: 90%;
-            margin: 0 1rem;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            overflow: hidden;
         }
     }
 }

@@ -8,7 +8,7 @@ const Navbar = () => {
     const openTab = router.pathname.split("/")[1]
 
     return(
-        <div className="navbar">
+        <div className={openTab === "gallery" ? "navbar special" : "navbar"}>
             <Link href='/' className={openTab === "" ? "active" : ""}>
                 <Home size={22} />
                 <div className="label">Home</div>

@@ -4,6 +4,7 @@ import '../styles/app.scss'
 import "prismjs/themes/prism-okaidia.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <Layout>
       <Component {...pageProps} />

@@ -1,27 +1,36 @@
-import type { NextPage } from 'next'
-import { getPhotoPaths } from '../../lib/gallery'
+import { PhotoInfo, getPhotoInfos } from '../../lib/gallery'
+import Image from 'next/image';
+import shuffle from '../../lib/shuffle';
 
 export async function getStaticProps() {
-    const photoList = getPhotoPaths();
+    let photoInfos = getPhotoInfos();
+    photoInfos = shuffle(photoInfos)
     return {
         props: {
-            photoList
+            photoInfos
         }
     }
 }
  
-const Gallery: NextPage = ({photoList}: any) => {
+const Gallery = ({photoInfos}: {photoInfos: PhotoInfo[]}) => {
     return(
         <div className='gallery'>
             <h1>The beauties of the world</h1>
             <div className='photo-grid'>
-                {photoList.map((photoPath: string, index: number) => {
+                {photoInfos.map((photoInfo, index: number) => {
                     return(
-                        <img
-                            key={index}
-                            src={photoPath}
-                            alt={photoPath}
-                        />
+                        <div className='item'>
+                            <Image
+                                key={index}
+                                src={photoInfo.filePath}
+                                alt={photoInfo.filePath}
+                                width={photoInfo.width}
+                                height={photoInfo.height}
+                                blurDataURL={photoInfo.blurFilePath}
+                                placeholder='blur'
+                                loading='lazy'
+                            />
+                        </div>
                     )
                 })}
             </div>
