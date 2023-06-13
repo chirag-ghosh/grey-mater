@@ -1,5 +1,6 @@
 ---
 title: "The One With The CDC Internship Process"
+description: "Here I throw light on my cdc preparation and the experience I had."
 date: "2023-06-12T23:25:47+05:30"
 draft: false
 categories: ["experience"]

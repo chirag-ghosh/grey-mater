@@ -1,5 +1,6 @@
 ---
 title: "The One With My Fear Of Coding"
+description: "A story about how a once code hating kid now became a software developer."
 date: "2021-11-04T01:18:47+05:30"
 draft: false
 categories: ["life", "non-tech", "self"]

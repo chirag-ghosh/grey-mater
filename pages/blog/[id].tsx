@@ -28,9 +28,10 @@ export default function Post({ postData }: any) {
 
   return (
     <>
-      {/* Add this <Head> tag */}
       <Head>
         <title>{postData.title}</title>
+        <meta name="title" content={postData.title} />
+        <meta name="description" content={postData.description} />
       </Head>
       <article className='markdown'>
         <div className='markdown-header'>
