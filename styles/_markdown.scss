@@ -122,6 +122,19 @@
             }
         }
 
+        .photo-grid-blog {
+            margin-top: 2rem;
+        
+            .item {
+                padding: 0.5rem 0.8rem;
+
+                img {
+                    margin: 0;
+                    max-width: 100%;
+                }
+            }
+        }
+
         table {
             margin: 1rem 0;
             border-collapse: collapse;

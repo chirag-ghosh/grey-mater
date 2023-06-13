@@ -19,36 +19,36 @@
             animation: loader 1.2s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
         }
     }
+}
 
-    .photo-grid {
+.photo-grid, .photo-grid-blog {
+    width: 100%;
+    margin-top: 5rem;
+    column-gap: 0rem;
+    column-count: 3;
+
+    &.loading {
+        visibility: hidden;
+    }
+
+    @include md {
+        column-count: 2;
+    }
+
+    @include sm {
+        column-count: 1;
+    }
+
+    .item {
+        padding: 0.5rem 0.8rem;
+        margin: 0rem;
+    }
+
+    img {
         width: 100%;
-        margin-top: 5rem;
-        column-gap: 0rem;
-        column-count: 3;
-
-        &.loading {
-            visibility: hidden;
-        }
-
-        @include md {
-            column-count: 2;
-        }
-
-        @include sm {
-            column-count: 1;
-        }
-
-        .item {
-            padding: 0.5rem 0.8rem;
-            margin: 0rem;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            overflow: hidden;
-        }
+        height: auto;
+        border-radius: 5px;
+        overflow: hidden;
     }
 }
 

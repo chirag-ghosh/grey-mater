@@ -18,7 +18,9 @@ Hold on. Ofcourse, I did not fall in love with CP and became a regular customer 
 
 By now you should have understood that it would take a very reluctant me to practice coding questions. It was indeed the case. I am very much grateful to my friends here, especially [Sarita](https://saritasingh.me/) who helped me with a lot of resources required for my preparation. I also had an offline internship. So it left with limited time for me to prepare but it was fine. I did some medium level questions in leetcode in various topics throughout the summers. I also did a small [side project](https://github.com/rajivharlalka/go-space) with my friend Rajiv.
 
-I went back to campus pretty early (15 days before the interviews were supposed to start) so as to prepare better and the more reliable internet. There were very few people in campus at that time and fewer friends. That was undoubtedly the hardest time for me. There were company talks and coding round tests every now and then. The tests were a real *pain-in-the-a*** because each had it's own rule and some other coding platform. I remember one such platform flagged that I was talking because it detected some dogs barking outside 😆. But to be fair, these tests gave me a lot of practice which was a good thing. 
+I went back to campus pretty early (15 days before the interviews were supposed to start) so as to prepare better and the more reliable internet. There were very few people in campus at that time and fewer friends. That was undoubtedly the hardest time for me. There were company talks and coding round tests every now and then. The tests were a real *pain-in-the-a*** because each had it's own rule and some other coding platform. I remember one such platform flagged that I was talking because it detected some dogs barking outside 😆. But to be fair, these tests gave me a lot of practice which was a good thing.
+
+One such particular sad days was 27th of July. I felt really empty and din't want to do anything at all. I went to my senior and he whole-heartedly lent me what I needed - **A camera**. I took the afternoon off and went on to click pictures of random things just to keep me distracted. I didn't really click any worthwhile photos but needless to say, I enjoyed every part of it. I'll share some photographs after this blog.
 
 The end of july saw more and more of my friends return to campus and it meant a much needed relief for me. Afterall you could finally go out after a 10pm test, meet with your friends and share every bit of frustration of the day. That I think was the most important silver lining in the whole process. And this silver lining expecially meant a lot on Day-1 of the interviews.
 
@@ -46,3 +48,15 @@ CDC internship is not *that* important as people generally put it. Ofcourse not 
 Signing off,</br>
 Chirag
 <br/>
+
+<div class="photo-grid-blog">
+    <div class="item"><img src="/blog-images/20220720_113304.jpg" alt="cycling" /></div>
+    <div class="item"><img src="/blog-images/20220720_202007.jpg" alt="cat-with-bag" /></div>
+    <div class="item"><img src="/blog-images/20220728_080227.jpg" alt="clear-sky-and-wide-trees" /></div>
+    <div class="item"><img src="/blog-images/IMG_6620.jpg" alt="sitting-bird" /></div>
+    <div class="item"><img src="/blog-images/IMG_6629.jpg" alt="old-dirty-van" /></div>
+    <div class="item"><img src="/blog-images/IMG_6651.jpg" alt="department-road" /></div>
+    <div class="item"><img src="/blog-images/IMG_6657.jpg" alt="bush-of-flowers" /></div>
+    <div class="item"><img src="/blog-images/IMG_6696.jpg" alt="empty-road" /></div>
+    <div class="item"><img src="/blog-images/20220801_140748.jpg" alt="cat-sleeping" /></div>
+</div>
