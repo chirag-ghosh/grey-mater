@@ -31,6 +31,10 @@ export default function Post({ postData }: any) {
         <title>{postData.title}</title>
         <meta name="title" content={postData.title} />
         <meta name="description" content={postData.description} />
+        <meta property="og:title" content={postData.title} />
+        <meta property="og:description" content={postData.description} />
+        <meta property="twitter:title" content={postData.title} />
+        <meta property="twitter:description" content={postData.description} />
       </Head>
       <article className="markdown">
         <div className="markdown-header">
