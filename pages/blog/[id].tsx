@@ -21,10 +21,9 @@ export async function getStaticProps({ params }: any) {
 }
 
 export default function Post({ postData }: any) {
-
   useEffect(() => {
     Prism.highlightAll();
-  }, [postData])
+  }, [postData]);
 
   return (
     <>
@@ -33,12 +32,12 @@ export default function Post({ postData }: any) {
         <meta name="title" content={postData.title} />
         <meta name="description" content={postData.description} />
       </Head>
-      <article className='markdown'>
-        <div className='markdown-header'>
+      <article className="markdown">
+        <div className="markdown-header">
           <h1>{postData.title}</h1>
-          <p>{(new Date(postData.date)).toLocaleDateString()}</p>
+          <p>{new Date(postData.date).toLocaleDateString("en-IN")}</p>
         </div>
-        <div className='markdown-body' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className="markdown-body" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </>
   );
