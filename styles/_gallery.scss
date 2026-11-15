@@ -14,6 +14,43 @@
         font-size: 2.5rem;
     }
 
+    // Styled after the floating navbar: a soft translucent box whose active
+    // option is a lighter rounded tile.
+    .sort {
+        align-self: flex-end;
+        margin: 2.5rem 0.8rem 0 0;
+        display: flex;
+        background-color: rgba($text-secondary, 0.1);
+        border-radius: 8px;
+        font-family: $monospace-font;
+        font-size: 0.75rem;
+
+        &.loading {
+            visibility: hidden;
+        }
+
+        button {
+            padding: 0.6rem 1rem;
+            border: none;
+            border-radius: 8px;
+            background: none;
+            font: inherit;
+            color: $text-secondary;
+            cursor: pointer;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: $white;
+            }
+
+            &.active {
+                background-color: rgba($text-secondary, 0.2);
+                color: $white;
+                transition: background-color 0.5s ease 0.1s;
+            }
+        }
+    }
+
     .loader {
         text-align: center;
         margin: 10rem 0;
@@ -27,24 +64,33 @@
 .photo-grid, .photo-grid-blog {
     width: 100%;
     margin-top: 5rem;
-    column-gap: 0rem;
-    column-count: 3;
 
     &.loading {
         visibility: hidden;
     }
 
-    @include md {
-        column-count: 2;
-    }
-
-    @include sm {
-        column-count: 1;
-    }
-
     .item {
         padding: 0.5rem 0.8rem;
         margin: 0rem;
+        break-inside: avoid;
+    }
+
+    .exif {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.15rem 0.9rem;
+        padding: 0.4rem 0.1rem 0.6rem;
+        font-family: $monospace-font;
+        font-size: 0.72rem;
+        color: $grey;
+
+        span:first-child {
+            color: $text-secondary;
+        }
+
+        .date {
+            margin-left: auto;
+        }
     }
 
     img {
@@ -52,6 +98,32 @@
         height: auto;
         border-radius: 5px;
         overflow: hidden;
+    }
+}
+
+// The gallery lays photos out in columns built in galleryGrid.tsx so that a
+// sorted order reads across the page; blog posts keep plain CSS columns.
+.photo-grid {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+
+    .column {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+.photo-grid-blog {
+    column-gap: 0rem;
+    column-count: 3;
+
+    @include md {
+        column-count: 2;
+    }
+
+    @include sm {
+        column-count: 1;
     }
 }
 
