@@ -1,11 +1,13 @@
+"use client";
+
 import Link from "next/link";
-import { Hash, Home, Image, Paperclip, PenTool } from "react-feather";
-import { useRouter } from "next/router";
+import { Hash, Home, Image as ImageIcon, Paperclip, PenTool } from "react-feather";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
 
-    const router = useRouter()
-    const openTab = router.pathname.split("/")[1]
+    const pathname = usePathname()
+    const openTab = pathname.split("/")[1]
 
     return(
         <div className={openTab === "gallery" ? "navbar special" : "navbar"}>
@@ -22,7 +24,7 @@ const Navbar = () => {
                 <div className="label">Blog</div>
             </Link>
             <Link href='/gallery' className={openTab === "gallery" ? "active" : ""}>
-                <Image size={22} />
+                <ImageIcon size={22} />
                 <div className="label">Gallery</div>
             </Link>
             <Link href='/Resume.pdf'>

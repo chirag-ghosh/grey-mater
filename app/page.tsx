@@ -1,7 +1,6 @@
-import type { NextPage } from 'next'
 import { biodata } from '../basicData'
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div className='home'>
       <div className='title'>{biodata.name}</div>
@@ -9,5 +8,3 @@ const Home: NextPage = () => {
     </div>
   )
 }
-
-export default Home

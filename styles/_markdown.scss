@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .markdown {
     max-width: 90%;
     width: 1200px;
