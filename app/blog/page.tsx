@@ -1,21 +1,10 @@
-import type { NextPage } from "next";
 import { getSortedPostsData } from "../../lib/blogs";
 
-export async function getStaticProps() {
-  let allPostsData = getSortedPostsData();
-
-  allPostsData = allPostsData.filter(({ draft }: any) => {
+export default function Blogs() {
+  const allPostsData = getSortedPostsData().filter(({ draft }: any) => {
     return !draft || process.env.NODE_ENV === "development";
   });
 
-  return {
-    props: {
-      allPostsData,
-    },
-  };
-}
-
-const Blogs: NextPage = ({ allPostsData }: any) => {
   return (
     <section className="blog-list">
       <ul>
@@ -35,6 +24,4 @@ const Blogs: NextPage = ({ allPostsData }: any) => {
       </ul>
     </section>
   );
-};
-
-export default Blogs;
+}

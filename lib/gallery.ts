@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import imageSize from 'image-size'
+import { imageSize } from 'image-size'
 
 export type PhotoInfo = {
     filePath: string,
@@ -14,7 +14,7 @@ export function getPhotoInfos() {
     const albumDirectory = path.join(process.cwd(), 'public/album/compressed');
     const fileNames = fs.readdirSync(albumDirectory);
     const fileInfos : PhotoInfo[] = fileNames.map((fileName) => {
-        const dimension = imageSize(path.join(albumDirectory, fileName))
+        const dimension = imageSize(fs.readFileSync(path.join(albumDirectory, fileName)))
         return {
             filePath: '/album/compressed/' + fileName,
             blurFilePath: '/album/blurred/' + fileName,

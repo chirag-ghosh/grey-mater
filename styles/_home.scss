@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .home {
     min-height: 50vh;
     max-width: 90%;

@@ -1,22 +1,18 @@
 //external
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@use 'fonts';
 
 //generic
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'global.scss';
-@import 'layout.scss';
+@use 'global';
+@use 'layout';
 
 //components
-@import 'header.scss';
-@import 'email-popup.scss';
-@import 'navbar.scss';
+@use 'header';
+@use 'email-popup';
+@use 'navbar';
 
 //pages
-@import 'home.scss';
-@import 'about.scss';
-@import 'blog-list.scss';
-@import 'markdown.scss';
-@import 'gallery.scss';
+@use 'home';
+@use 'about';
+@use 'blog-list';
+@use 'markdown';
+@use 'gallery';

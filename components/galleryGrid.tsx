@@ -1,20 +1,11 @@
-import { PhotoInfo, getPhotoInfos } from '../../lib/gallery'
+'use client'
+
+import type { PhotoInfo } from '../lib/gallery'
 import Image from 'next/image';
-import shuffle from '../../lib/shuffle';
 import { useEffect, useState } from 'react';
 import { Loader } from 'react-feather';
 
-export async function getStaticProps() {
-    let photoInfos = getPhotoInfos();
-    photoInfos = shuffle(photoInfos)
-    return {
-        props: {
-            photoInfos
-        }
-    }
-}
- 
-const Gallery = ({photoInfos}: {photoInfos: PhotoInfo[]}) => {
+const GalleryGrid = ({photoInfos}: {photoInfos: PhotoInfo[]}) => {
 
     const [isLoading, setIsLoading] = useState(true)
 
@@ -60,4 +51,4 @@ const Gallery = ({photoInfos}: {photoInfos: PhotoInfo[]}) => {
     )
 }
 
-export default Gallery
+export default GalleryGrid

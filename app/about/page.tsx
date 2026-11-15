@@ -1,6 +1,4 @@
-import { NextPage } from "next";
-
-const About: NextPage = () => {
+export default function About() {
     return (
         <div className="about">
             <div className="biodata section">
@@ -28,5 +26,3 @@ const About: NextPage = () => {
         </div>
     )
 }
-
-export default About

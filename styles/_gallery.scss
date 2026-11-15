@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .gallery {
     width: 95%;
     margin: 2rem auto;

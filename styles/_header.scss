@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 .header {
     max-width: 90%;
     width: 1200px;
@@ -15,6 +18,7 @@
 
     img {
         width: 4rem;
+        height: auto;
         border-radius: 100%;
 
         @include sm {
